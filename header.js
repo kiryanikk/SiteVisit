@@ -18,5 +18,5 @@ button.onclick = function() {
 
 close.onclick = function() {
     content.style.opacity = "0";
-    setTimeout(none, 1000);
+    setTimeout(none, 90);
 }

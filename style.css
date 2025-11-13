@@ -369,8 +369,14 @@ html{
 }
 
 h1 {
-    color: #7c0000;
+    color: #ffffff;
     font-size: 48px;
+}
+
+.header_title {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, rgb(255, 0, 0), rgb(153, 61, 0));
 }
 
 p {
@@ -384,7 +390,9 @@ header {
     position: fixed;
     left: 0;
     top: 0;
-    padding-bottom: 15px;
+    backdrop-filter: blur(15px);
+    background: rgb(0, 0, 0, 0.25);
+    border-bottom: 2px solid rgb(246, 233, 233, 0.15);
     z-index: 2;
 }
 
@@ -397,15 +405,16 @@ header {
 body {
     background-image: url("files/image/1662446662_4-zefirka-club-p-cherno-bordovii-fon-4.jpg");
     width: 100%;
-    background: #EEEFF1;
+    font-family: "Momo Signature", cursive;
+    background: rgb(29, 28, 29);
 }
 
 .header_logo {
-    font-family: "Momo Signature", cursive;
     font-style: normal;
     font-weight: normal;
     cursor: pointer;
-    margin-top: 57px;
+    margin-top: 15px;
+    padding-bottom: 15px;
     position: relative;
 }
 
@@ -417,7 +426,7 @@ body {
     width: 12px;
     height: 12px;
     border-radius: 5px;
-    background-color: #919191;
+    background-color: #363536;
     animation: updown 1.5s infinite;
     transition: 500ms;
 }
@@ -427,7 +436,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 80%;
     opacity: 0.6;
     z-index: -1;
 }
@@ -445,11 +454,11 @@ body {
 }
 
 .header_menu {
-    font-family: "Momo Signature", cursive;
+    /* font-family: "Momo Signature", cursive; */
     font-style: normal;
     font-weight: normal;
     cursor: pointer;
-    margin-top: 79px;
+    margin-top: 30px;
 }
 
 .header_menu a {
@@ -457,6 +466,7 @@ body {
 }
 
 .intro {
+    border-bottom: 2px solid rgb(246, 233, 233, 0.15);
     padding-top: 257px;
     display: flex;
     width: 100%;
@@ -475,27 +485,28 @@ body {
 }
 
 .intro_title {
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
     line-height: 79px;
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 60px;
     font-weight: bold;
 }
 
 .intro_text {
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
-    color: #727272;
+    color: #fff;
 }
 
 .about {
-    background: white;
+    border-bottom: 2px solid rgb(246, 233, 233, 0.15);
+    background: #1d1c1d;
 }
 
 .wrapper {
@@ -514,7 +525,7 @@ body {
 }
 
 .about_title {
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -526,13 +537,13 @@ body {
 }
 
 .about_text {
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
     text-align: center;
-    color: #727272;
+    color: #ffffff;
     margin-bottom: 100px;
 }
 
@@ -577,7 +588,7 @@ body {
 .skills_title {
     margin-top: 200px;
     margin-bottom: 50px;
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -586,7 +597,7 @@ body {
 }
 
 .skill {
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -680,7 +691,7 @@ body {
 }
 
 .process_title {
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -692,13 +703,13 @@ body {
 }
 
 .process_text {
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
     text-align: center;
-    color: #727272;
+    color: #ffffff;
     margin-bottom: 57px;
 }
 
@@ -714,7 +725,7 @@ body {
 }
 
 .send_title {
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -727,31 +738,33 @@ body {
 }
 
 .send_text {
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
     text-align: center;
-    color: #727272;
+    color: #ffffff;
     width: 540px;
     margin-bottom: 65px;
 }
 
 .send_form {
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .formstyle {
-    font-family: Roboto;
+    /* font-family: Roboto; */
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 23px;
-	color: #5F5D5D;
-    background-color: white;
+	color: #000000;
+    background-color: rgb(196, 196, 196, 0.1);
+    border-radius: 25px;
     border: 0;
     padding: 17px 20px;
 }
@@ -788,7 +801,7 @@ body {
     height: 55px;
     border: 0;
     background-color: #34547A;
-    font-family: Roboto;
+    font-family: "Momo Signature", cursive;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
@@ -821,7 +834,7 @@ body {
 }
 
 .intro_button {
-    font-family: Roboto;
+    font-family: "Momo Signature", cursive; 
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
@@ -848,30 +861,33 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(43, 43, 43, 0.7);
+    backdrop-filter: blur(4px);
     z-index: 3;
 }
 
 .modal_content {
+    border-radius: 15px;
     padding: 20px;
     margin: 11% auto;
-    background-color: #EEEFF1;
+    background-color: rgba(56, 55, 56, 0.9);
     width: 60%;
-    opacity: 0; 
-    transition-property: opacity;
-    transition-duration: 2s;
+    opacity: 1s; 
+    /* transition-property: 1s; */
+    /* transition-duration: 2s; */
 }
 
 .close {
-    font-family: Revalia;
+    /* font-family: Revalia; */
     font-size: 48px;
+    margin-right: 20px;
     cursor: pointer;
-    color: #34547A;
+    color: #7c0000;
     float: right;
 }
 
 .modal_title {
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -888,7 +904,8 @@ body {
     height: 55px;
     border: 0;
     background-color: #34547A;
-    font-family: Roboto;
+    font-family: "Momo Signature", cursive;
+    border-radius: 50px;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
@@ -913,7 +930,7 @@ footer {
 }
 
 .footer_title {
-    font-family: Roboto;
+    /* font-family: Roboto; */
 	font-style: normal;
 	font-weight: 500;
 	font-size: 21px;
@@ -924,7 +941,7 @@ footer {
 }
 
 .footer_text {
-    font-family: Roboto;
+    /* font-family: Roboto; */
 	font-style: normal;
 	font-weight: normal;
 	font-size: 13px;
@@ -946,91 +963,101 @@ a {
 }
 
 .menu_item {
-    color: rgb(255, 255, 255);
+    color: #f6e9e9;
     text-decoration: none;
-    font-family: inherit;
+    /* font-family: inherit; */
     font-weight: bold;
     text-transform: capitalize;
     position: relative;
-    transition: .7s;
+    transition: color .3s easy;
+    padding-bottom: 28px;
 }
 
 .menu_item:hover {
-    opacity: .4;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, rgb(255, 0, 0), rgb(153, 61, 0));
+    /* opacity: .4; */
 }
 
 .menu_item1::after {
     content: "";
     position: absolute;
+    box-shadow: 0 0 8px 1px rgba(255, 0, 0, 0.5);
     bottom: -2px;
     left: 41px;
     width: 0%;
-    border: 0 solid white;
+    color: red;
+    border: 0 solid red;
     transition: .3s;
-}
+} 
 
 .menu_item1:hover::after {
-    border: 1px solid white;
+    border: 1px solid rgb(255, 0, 0, 1);
     width: 66%;
 }
 
 .menu_item2::after {
     content: "";
     position: absolute;
+    box-shadow: 0 0 8px 1px rgba(255, 0, 0, 0.5);
     bottom: -2px;
     left: 42px;
     width: 0%;
-    border: 0 solid white;
+    border: 0 solid rgb(255, 0, 0);
     transition: .3s;
 }
 
 .menu_item2:hover::after {
-    border: 1px solid white;
+    border: 1px solid rgb(255, 0, 0);
     width: 69%;
 }
 
 .menu_item3::after {
     content: "";
     position: absolute;
+    box-shadow: 0 0 8px 1px rgba(255, 0, 0, 0.5);
     bottom: -2px;
     left: 42px;
     width: 0%;
-    border: 0 solid white;
+    border: 0 solid rgb(255, 0, 0);
     transition: .3s;
 }
 
 .menu_item3:hover::after {
-    border: 1px solid white;
+    border: 1px solid rgb(255, 0, 0);
     width: 62%;
 }
 
 .menu_item4::after {
     content: "";
     position: absolute;
+    box-shadow: 0 0 8px 1px rgba(255, 0, 0, 0.5);
     bottom: -2px;
     left: 42px;
     width: 0%;
-    border: 0 solid white;
+    border: 0 solid rgb(255, 0, 0);
     transition: .3s;
 }
 
 .menu_item4:hover::after {
-    border: 1px solid white;
+    border: 1px solid rgb(255, 0, 0);
     width: 69%;
 }
 
 .menu_item5::after {
     content: "";
     position: absolute;
+    box-shadow: 0 0 8px 1px rgba(255, 0, 0, 0.5);
     bottom: -2px;
     left: 42px;
     width: 0%;
-    border: 0 solid white;
+    border: 0 solid rgb(255, 0, 0);
     transition: .3s;
 }
 
 .menu_item5:hover::after {
-    border: 1px solid white;
+    border: 1px solid rgb(255, 0, 0);
     width: 69%;
 }
 
